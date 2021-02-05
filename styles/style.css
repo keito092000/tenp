@@ -1,0 +1,1996 @@
+@charset "UTF-8";
+/******************************************************************
+
+Stylesheet: ベーススタイル
+
+******************************************************************/
+body {
+  font-family: 'Kameron','Noto Sans JP', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+.font-sm {
+  font-size: 14px;
+}
+
+.font-md {
+  font-size: 17px;
+}
+
+.font-lr {
+  font-size: 17px;
+}
+
+.font-lg {
+  font-size: 25px;
+}
+
+.mb-sm {
+  margin-bottom: 16px !important;
+}
+
+.mb-lg {
+  margin-bottom: 80px !important;
+}
+
+.pb-sm {
+  padding-bottom: 16px !important;
+}
+
+.pb-lg {
+  padding-bottom: 80px !important;
+}
+
+.content-width {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+}
+
+@media (min-width: 374px) {
+  .own-page .header-pe {
+    height: 60px;
+  }
+  .own-page .header-pe .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 375px;
+  }
+  .own-page .header-pe .list img {
+    width: 100px;
+    padding-left: 5px;
+  }
+  .own-page .header-pe .list p {
+    width: 180px;
+    font-size: 10px;
+    padding-top: 13px;
+  }
+  .own-page .header-pc {
+    display: none;
+  }
+  .own-page .own-pe {
+    position: relative;
+    background-image: url("https://vbackground.com/haikei/wp-content/uploads/2020/04/white_wall_cealinglight.jpg");
+    height: 450px;
+    background-size: cover;
+  }
+  .own-page .own-pe h1 {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 340px;
+    font-size: 21px;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .own-pe h1 > span {
+    color: #FF3399;
+  }
+  .own-page .own-pe p {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 330px;
+    font-size: 10px;
+  }
+  .own-page .own-pc {
+    display: none;
+  }
+  .own-page .two-pe {
+    position: relative;
+    background-image: url("https://i.pinimg.com/originals/8e/89/1e/8e891e665a66ed96f1101ed579285d59.jpg");
+    height: 850px;
+  }
+  .own-page .two-pe::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .two-pe .flex {
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    color: white;
+  }
+  .own-page .two-pe .flex p {
+    font-weight: bold;
+    text-align: center;
+  }
+  .own-page .two-pe .flex h2 {
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    border-bottom: 3px solid yellow;
+    margin-bottom: 20px;
+  }
+  .own-page .two-pe .flex .batsu {
+    font-size: 70px;
+    text-align: center;
+    font-weight: lighter;
+    opacity: 0.6;
+    margin-bottom: 20px;
+  }
+  .own-page .two-pe .text {
+    position: absolute;
+    top: 750px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 340px;
+    font-size: 13px;
+    text-align: center;
+    color: white;
+  }
+  .own-page h2:nth-child(2) {
+    width: 250px;
+  }
+  .own-page .two-pc {
+    display: none;
+  }
+  .own-page .three-pe {
+    position: relative;
+  }
+  .own-page .three-pe .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .three-pe .flex .list {
+    margin: 80px 0;
+  }
+  .own-page .three-pe .flex .list h1 {
+    position: relative;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: rgba(255, 204, 204, 0.45);
+    font-size: 60px;
+    width: 230px;
+  }
+  .own-page .three-pe .flex .list img {
+    position: relative;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translate(-38%, -50%);
+            transform: translate(-38%, -50%);
+    width: 300px;
+  }
+  .own-page .three-pe .flex .list .lang {
+    position: relative;
+    top: 120px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 330px;
+    border-left: 4px solid #FF3399;
+    padding-left: 20px;
+  }
+  .own-page .three-pe .flex .list .lang .strong {
+    font-weight: bold;
+    color: #FF3399;
+  }
+  .own-page .three-pe .flex .list .lang h2 {
+    width: 300px;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .three-pe .flex .list .lang h2 > span {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ff6));
+    background: linear-gradient(transparent 60%, #ff6 60%);
+  }
+  .own-page .three-pe .flex .list .work {
+    line-height: 25px;
+    width: 300px;
+    position: relative;
+    top: 400px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 11px;
+  }
+  .own-page .three-pc {
+    display: none;
+  }
+  .own-page .four-pe-pc {
+    position: relative;
+    top: 150px;
+    background-image: url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height: 500px;
+    background-size: cover;
+  }
+  .own-page .four-pe-pc::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .four-pe-pc h1 {
+    z-index: 2;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 250px;
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  .own-page .four-pe-pc p {
+    z-index: 2;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 370px;
+    text-align: center;
+    color: white;
+  }
+  .own-page .four-pe-pc #container {
+    position: relative;
+    top: 300px;
+    text-align: center;
+    z-index: 2;
+  }
+  .own-page .four-pe-pc #container .btn {
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 300px;
+  }
+  .own-page .four-pe-pc #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .five-pe {
+    position: relative;
+    top: 150px;
+  }
+  .own-page .five-pe .title {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #FF3399;
+    font-size: 40px;
+  }
+  .own-page .five-pe .flex-ul {
+    position: absolute;
+    top: 1270px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .own-page .five-pe .flex-ul .flex-li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .five-pe .flex-ul .flex-li .numbers {
+    text-align: left;
+    color: #FF9999;
+    font-size: 60px;
+  }
+  .own-page .five-pe .flex-ul .flex-li img {
+    width: 400px;
+  }
+  .own-page .five-pe .flex-ul .flex-li .box {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 1px #000000;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .own-page .five-pe .flex-ul .flex-li .box p {
+    font-weight: lighter;
+  }
+  .own-page .five-pe .flex-ul .flex-li h2 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: lighter;
+    padding-bottom: 10px;
+  }
+  .own-page .five-pc {
+    display: none;
+  }
+  .own-page .six-pe {
+    position: relative;
+    top: 2630px;
+    height: 870px;
+    background-color: #EEEEEE;
+  }
+  .own-page .six-pe .our {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #FF3399;
+    font-weight: bold;
+  }
+  .own-page .six-pe .list {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .own-page .six-pe .list .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .six-pe .list .flex .red {
+    border-left: 4px solid #FF3399;
+    text-align: left;
+    margin-left: 20px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .own-page .six-pe .list .flex .red .number {
+    color: #FF82B2;
+    padding-left: 20px;
+  }
+  .own-page .six-pe .list .flex .red h2 {
+    font-size: 15px;
+    padding-left: 20px;
+    width: 300px;
+  }
+  .own-page .six-pe .list .flex p {
+    width: 320px;
+    margin-left: 25px;
+    padding-top: 20px;
+    font-size: 13px;
+  }
+  .own-page .six-pc {
+    display: none;
+  }
+  .own-page .seven-pe-pc {
+    position: relative;
+    top: 2630px;
+    background-image: url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height: 500px;
+    background-size: cover;
+  }
+  .own-page .seven-pe-pc::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .seven-pe-pc h1 {
+    z-index: 2;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 250px;
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+  }
+  .own-page .seven-pe-pc p {
+    z-index: 2;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 370px;
+    text-align: center;
+    color: white;
+  }
+  .own-page .seven-pe-pc #container {
+    position: relative;
+    top: 300px;
+    text-align: center;
+    z-index: 2;
+  }
+  .own-page .seven-pe-pc #container .btn {
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 300px;
+  }
+  .own-page .seven-pe-pc #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .eight-pe {
+    position: relative;
+    top: 2700px;
+  }
+  .own-page .eight-pe h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: #FF3399;
+  }
+  .own-page .eight-pe .flex {
+    position: absolute;
+    top: 730px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .own-page .eight-pe .flex .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .eight-pe .flex .list img {
+    width: 400px;
+  }
+  .own-page .eight-pe .flex .list .tab {
+    margin-top: 20px;
+    border-left: 2px solid #FF3399;
+    margin-left: 1px;
+    padding-left: 15px;
+    height: 70px;
+  }
+  .own-page .eight-pe .flex .list .tab .service {
+    font-weight: bold;
+    color: #FF3399;
+    padding-top: 5px;
+  }
+  .own-page .eight-pe .flex .list .tab h3 {
+    font-family: 'Noto Serif JP', serif;
+    position: relative;
+    bottom: 10px;
+  }
+  .own-page .eight-pe .flex .list .system {
+    width: 290px;
+    font-size: 13px;
+    margin-left: 20px;
+  }
+  .own-page .eight-pc {
+    display: none;
+  }
+  .own-page .nine-pe-pc {
+    position: relative;
+    top: 4100px;
+    background-image: url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height: 340px;
+    background-size: cover;
+  }
+  .own-page .nine-pe-pc::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .nine-pe-pc h1 {
+    z-index: 2;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  .own-page .nine-pe-pc h3 {
+    z-index: 2;
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 345px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .nine-pe-pc #container {
+    position: relative;
+    top: 160px;
+    text-align: center;
+    z-index: 2;
+  }
+  .own-page .nine-pe-pc #container .btn {
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 300px;
+  }
+  .own-page .nine-pe-pc #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .ten-pe {
+    position: relative;
+    top: 4030px;
+    height: 870px;
+  }
+  .own-page .ten-pe .our {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: #FF3399;
+    font-weight: bold;
+  }
+  .own-page .ten-pe .list {
+    position: absolute;
+    top: 450px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .own-page .ten-pe .list .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .ten-pe .list .flex .red {
+    border-left: 4px solid #FF3399;
+    text-align: left;
+    margin-left: 20px;
+    height: 80px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .own-page .ten-pe .list .flex .red .number {
+    color: #FF82B2;
+    padding-left: 20px;
+  }
+  .own-page .ten-pe .list .flex .red h2 {
+    font-size: 15px;
+    padding-left: 20px;
+    width: 300px;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .ten-pe .list .flex p {
+    width: 320px;
+    margin-left: 25px;
+    padding-top: 20px;
+    font-size: 13px;
+  }
+  .own-page .ten-pc {
+    display: none;
+  }
+  .own-page .eleven-pe {
+    position: relative;
+    top: 4000px;
+    background-color: #EEEEEE;
+    height: 1400px;
+  }
+  .own-page .eleven-pe h1 {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 37px;
+    text-align: center;
+    color: #FF3399;
+  }
+  .own-page .eleven-pe p {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 290px;
+    text-align: center;
+  }
+  .own-page .eleven-pe img {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 350px;
+  }
+  .own-page .eleven-pe table {
+    position: absolute;
+    top: 1020px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 350px;
+  }
+  .own-page .eleven-pe table th, .own-page .eleven-pe table td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+  }
+  .own-page .eleven-pe table th {
+    font-weight: bold;
+    width: 200px;
+  }
+  .own-page .eleven-pe table ul li {
+    list-style: none;
+  }
+  .own-page .eleven-pc {
+    display: none;
+  }
+  .own-page .twelev-pe {
+    position: relative;
+    top: 4200px;
+  }
+  .own-page .twelev-pe img {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 260px;
+  }
+  .own-page .twelev-pe .opacity {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: rgba(255, 204, 204, 0.45);
+    font-size: 70px;
+  }
+  .own-page .twelev-pe .title {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 200px;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .twelev-pe .title > span {
+    color: #FF3399;
+  }
+  .own-page .twelev-pe p {
+    position: absolute;
+    top: 280px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 350px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .own-page .twelev-pc {
+    display: none;
+  }
+  .own-page .thirteen-pe {
+    display: block;
+    position: relative;
+    top: 4600px;
+    background-color: #EEEEEE;
+    height: 430px;
+  }
+  .own-page .thirteen-pe .contact {
+    position: absolute;
+    top: 1px;
+    font-size: 40px;
+    left: 50%;
+    color: #FF3399;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .own-page .thirteen-pe .list {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .own-page .thirteen-pe .list h4 {
+    font-size: 20px;
+    width: 300px;
+    color: #FF3399;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .thirteen-pe .list h3 {
+    font-size: 23px;
+    font-weight: bold;
+  }
+  .own-page .thirteen-pe .tab {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    -webkit-transform: translate(-60%, -50%);
+            transform: translate(-60%, -50%);
+    width: 200px;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .thirteen-pe .tab h4 {
+    font-size: 20px;
+    width: 250px;
+    color: #FF3399;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .thirteen-pe .tab #container {
+    position: relative;
+    bottom: 30px;
+    right: 30px;
+  }
+  .own-page .thirteen-pe .tab #container .btn {
+    background-color: #FF3399;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 290px;
+  }
+  .own-page .thirteen-pe .tab #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .thirteen-pe .tab .p {
+    position: relative;
+    bottom: 50px;
+    left: 20px;
+  }
+  .own-page .thirteen-pc {
+    display: none;
+  }
+  .own-page .fourteen-pe {
+    position: relative;
+    top: 4600px;
+    background-color: black;
+    height: 350px;
+  }
+  .own-page .fourteen-pe img {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 100px;
+  }
+  .own-page .fourteen-pe .flex {
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    top: 90px;
+  }
+  .own-page .fourteen-pe .flex .last {
+    color: silver;
+  }
+  .own-page .fourteen-pc {
+    display: none;
+  }
+  .two-page .header {
+    position: relative;
+    height: 60px;
+  }
+  .two-page .header img {
+    width: 90px;
+    margin: 10px;
+  }
+  .two-page .own-pe {
+    position: relative;
+    background-image: url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height: 190px;
+    background-size: cover;
+  }
+  .two-page .own-pe::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .two-page .own-pe h1 {
+    z-index: 2;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    width: 330px;
+    font-size: 23px;
+    text-align: center;
+  }
+  .two-page .two-pe {
+    position: relative;
+  }
+  .two-page .two-pe .Form {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .two-page .two-pe .Form .Form-Item {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .two-page .Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+  }
+  .two-page .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 500px) {
+  .own-page .header-pe {
+    display: none;
+  }
+  .own-page .header-pc {
+    height: 90px;
+    display: block;
+  }
+  .own-page .header-pc .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding-top: 20px;
+  }
+  .own-page .header-pc .list .left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .header-pc .list .left img {
+    width: 100px;
+  }
+  .own-page .header-pc .list .left p {
+    width: 500px;
+  }
+  .own-page .header-pc .list ul {
+    padding-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 700px;
+  }
+  .own-page .header-pc .list ul li {
+    list-style: none;
+    color: black;
+  }
+  .own-page .header-pc .list #container {
+    position: relative;
+    bottom: 70px;
+    text-align: center;
+  }
+  .own-page .header-pc .list #container .btn {
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 90px;
+    width: 250px;
+  }
+  .own-page .header-pc .list #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .own-pe {
+    display: none;
+  }
+  .own-page .own-pc {
+    display: block;
+    position: relative;
+    background-image: url("https://vbackground.com/haikei/wp-content/uploads/2020/04/white_wall_cealinglight.jpg");
+    height: 730px;
+    background-size: cover;
+  }
+  .own-page .own-pc h1 {
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    -webkit-transform: translate(-80%, -50%);
+            transform: translate(-80%, -50%);
+    font-size: 45px;
+    width: 720px;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: lighter;
+  }
+  .own-page .own-pc h1 > span {
+    color: #FF3399;
+  }
+  .own-page .own-pc p {
+    position: absolute;
+    top: 410px;
+    left: 50%;
+    -webkit-transform: translate(-79%, -50%);
+            transform: translate(-79%, -50%);
+    font-size: 17px;
+    font-weight: bold;
+    width: 720px;
+  }
+  .own-page .two-pe {
+    display: none;
+  }
+  .own-page h2:nth-child(2) {
+    display: none;
+  }
+  .own-page .two-pc {
+    display: block;
+    position: relative;
+    background-image: url("https://i.pinimg.com/originals/8e/89/1e/8e891e665a66ed96f1101ed579285d59.jpg");
+    height: 500px;
+    background-size: cover;
+  }
+  .own-page .two-pc::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .two-pc .flex {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    -webkit-transform: translate(-56%, -50%);
+            transform: translate(-56%, -50%);
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    color: white;
+  }
+  .own-page .two-pc .flex .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 150px;
+    font-size: 25px;
+  }
+  .own-page .two-pc .flex .list p {
+    font-weight: bold;
+    text-align: center;
+  }
+  .own-page .two-pc .flex .list h3 {
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+    border-bottom: 4px solid yellow;
+  }
+  .own-page .two-pc .flex .batsu {
+    font-size: 70px;
+    text-align: center;
+    font-weight: lighter;
+    opacity: 0.6;
+    margin-left: 50px;
+    margin-right: -100px;
+  }
+  .own-page .two-pc .text {
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 580px;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+  }
+  .own-page h3:nth-child(2) {
+    width: 300px;
+  }
+  .own-page .three-pe {
+    display: none;
+  }
+  .own-page .three-pc {
+    position: relative;
+    display: block;
+  }
+  .own-page .three-pc .box {
+    position: relative;
+    top: 500px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 40px;
+    width: 1000px;
+  }
+  .own-page .three-pc .box .text h3 {
+    font-size: 25px;
+    margin: 0;
+    color: #FF3399;
+    padding-bottom: 20px;
+  }
+  .own-page .three-pc .box .text p {
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    padding-bottom: 10px;
+  }
+  .own-page .three-pc .box .text p > span {
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ff6));
+    background: linear-gradient(transparent 60%, #ff6 60%);
+  }
+  .own-page .three-pc .box .text div {
+    margin: 10px;
+  }
+  .own-page .three-pc .box .pict {
+    width: 400px;
+    margin-left: 110px;
+    margin-top: 140px;
+  }
+  .own-page .three-pc .box .pict img {
+    width: 100%;
+    height: auto;
+  }
+  .own-page .box:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .own-page .box:nth-child(even) .text {
+    padding-left: 10px;
+  }
+  .own-page .box:nth-child(even) .text h3 {
+    text-align: left;
+  }
+  .own-page .box:nth-child(even) .text p {
+    text-align: left;
+  }
+  .own-page .box:nth-child(even) .text div {
+    text-align: left;
+  }
+  .own-page .box:nth-child(even) .pict {
+    width: 1000px;
+    margin-left: 0;
+    margin-right: 150px;
+    margin-top: 140px;
+  }
+  .own-page .four-pe-pc {
+    position: relative;
+    top: 300px;
+    background-image: url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height: 400px;
+    background-size: cover;
+  }
+  .own-page .four-pe-pc::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .four-pe-pc h1 {
+    z-index: 2;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 410px;
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    font-size: 45px;
+    font-weight: lighter;
+  }
+  .own-page .four-pe-pc p {
+    z-index: 2;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 480px;
+    text-align: center;
+    color: white;
+  }
+  .own-page .four-pe-pc #container {
+    position: relative;
+    top: 250px;
+    text-align: center;
+    z-index: 2;
+  }
+  .own-page .four-pe-pc #container .btn {
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 300px;
+  }
+  .own-page .four-pe-pc #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .five-pe {
+    display: none;
+  }
+  .own-page .five-pc {
+    display: block;
+    position: relative;
+    top: 500px;
+  }
+  .own-page .five-pc .h1 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 50px;
+    color: #FF3399;
+  }
+  .own-page .five-pc .box {
+    position: relative;
+    top: 300px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin-bottom: 40px;
+  }
+  .own-page .five-pc .box .text {
+    margin-left: 100px;
+  }
+  .own-page .five-pc .box .text h1 {
+    font-size: 100px;
+    color: #FF9999;
+  }
+  .own-page .five-pc .box .text .tab {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 1px #000000;
+    width: 350px;
+    height: 40px;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .own-page .five-pc .box .text .tab .project {
+    font-weight: lighter;
+  }
+  .own-page .five-pc .box .text h2 {
+    font-size: 21px;
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    padding-bottom: 20px;
+  }
+  .own-page .five-pc .box .text .go {
+    font-size: 21px;
+    margin: 0;
+    width: 500px;
+  }
+  .own-page .five-pc .box .pict {
+    position: relative;
+    top: 200px;
+    width: 500px;
+    margin-right: 30px;
+  }
+  .own-page .five-pc .box .pict img {
+    width: 100%;
+    height: auto;
+  }
+  .own-page .box:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .own-page .box:nth-child(even) .text {
+    margin-right: 100px;
+    text-align: right;
+  }
+  .own-page .box:nth-child(even) .text h2 {
+    text-align: left;
+  }
+  .own-page .box:nth-child(even) .pict {
+    position: relative;
+    top: 30px;
+    left: 80px;
+    width: 500px;
+  }
+  .own-page .six-pe {
+    display: none;
+  }
+  .own-page .six-pc {
+    position: relative;
+    top: 600px;
+    height: 550px;
+    display: block;
+    background-color: #EEEEEE;
+  }
+  .own-page .six-pc .our {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #FF3399;
+    font-weight: bold;
+  }
+  .own-page .six-pc .list {
+    padding-top: 50px;
+    width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .own-page .six-pc .list .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .six-pc .list .flex .tab {
+    border-left: 3px solid #FF3399;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .own-page .six-pc .list .flex .tab .numbers {
+    color: #FF9999;
+    font-size: 50px;
+  }
+  .own-page .six-pc .list .flex .tab h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 23px;
+  }
+  .own-page .six-pc .list .flex p {
+    width: 300px;
+    text-align: left;
+  }
+  .own-page .seven-pe-pc {
+    position: relative;
+    top: 600px;
+    background-image: url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height: 400px;
+    background-size: cover;
+  }
+  .own-page .seven-pe-pc::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .seven-pe-pc h1 {
+    z-index: 2;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 410px;
+    font-family: 'Noto Serif JP', serif;
+    color: white;
+    font-size: 45px;
+    font-weight: lighter;
+  }
+  .own-page .seven-pe-pc p {
+    z-index: 2;
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 480px;
+    text-align: center;
+    color: white;
+  }
+  .own-page .seven-pe-pc #container {
+    position: relative;
+    top: 250px;
+    text-align: center;
+    z-index: 2;
+  }
+  .own-page .seven-pe-pc #container .btn {
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 300px;
+  }
+  .own-page .seven-pe-pc #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .eight-pe {
+    display: none;
+  }
+  .own-page .eight-pc {
+    display: block;
+    position: relative;
+    top: 750px;
+  }
+  .own-page .eight-pc h1 {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 70px;
+    color: #FF3399;
+  }
+  .own-page .eight-pc .flex {
+    position: absolute;
+    top: 700px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 1130px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .own-page .eight-pc .flex .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .eight-pc .flex .list img {
+    width: 500px;
+  }
+  .own-page .eight-pc .flex .list .tab {
+    border-left: 2px solid #FF3399;
+    padding-left: 10px;
+    margin-top: 20px;
+  }
+  .own-page .eight-pc .flex .list .tab .service {
+    font-weight: bold;
+    color: #FF3399;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+  }
+  .own-page .eight-pc .flex .list .tab h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 25px;
+    width: 400px;
+  }
+  .own-page .eight-pc .flex .list .system {
+    width: 500px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+  }
+  .own-page .list:nth-child(even) {
+    position: relative;
+    top: 40px;
+  }
+  .own-page .nine-pe-pc {
+    position: relative;
+    top: 2000px;
+    background-image: url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height: 400px;
+    background-size: cover;
+  }
+  .own-page .nine-pe-pc::after {
+    content: '';
+    background-color: #FF3399;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  .own-page .nine-pe-pc h1 {
+    z-index: 2;
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    font-size: 65px;
+    font-weight: bold;
+  }
+  .own-page .nine-pe-pc h3 {
+    z-index: 2;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 700px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Noto Serif JP', serif;
+  }
+  .own-page .nine-pe-pc #container {
+    position: relative;
+    top: 250px;
+    text-align: center;
+    z-index: 2;
+  }
+  .own-page .nine-pe-pc #container .btn {
+    background-color: black;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 300px;
+  }
+  .own-page .nine-pe-pc #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .ten-pe {
+    display: none;
+  }
+  .own-page .ten-pc {
+    display: block;
+    position: relative;
+    top: 2200px;
+    height: 550px;
+    display: block;
+  }
+  .own-page .ten-pc .our {
+    position: absolute;
+    top: -2px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 60px;
+    color: #FF3399;
+    font-weight: bold;
+  }
+  .own-page .ten-pc .list {
+    padding-top: 50px;
+    width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .own-page .ten-pc .list .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .ten-pc .list .flex .tab {
+    border-left: 3px solid #FF3399;
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  .own-page .ten-pc .list .flex .tab .numbers {
+    color: #FF9999;
+    font-size: 50px;
+  }
+  .own-page .ten-pc .list .flex .tab h3 {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 23px;
+  }
+  .own-page .ten-pc .list .flex p {
+    width: 300px;
+    text-align: left;
+  }
+  .own-page .eleven-pe {
+    display: none;
+  }
+  .own-page .eleven-pc {
+    display: block;
+    position: relative;
+    top: 2250px;
+    background-color: #EEEEEE;
+    height: 830px;
+  }
+  .own-page .eleven-pc h1 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 55px;
+    color: #FF3399;
+  }
+  .own-page .eleven-pc p {
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 22px;
+    width: 770px;
+    text-align: center;
+  }
+  .own-page .eleven-pc .list {
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    -webkit-transform: translate(-90%, -50%);
+            transform: translate(-90%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .own-page .eleven-pc .list img {
+    width: 600px;
+    height: 400px;
+  }
+  .own-page .eleven-pc .list table {
+    width: 550px;
+    margin-left: 80px;
+  }
+  .own-page .eleven-pc .list table th, .own-page .eleven-pc .list table td {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+  }
+  .own-page .eleven-pc .list table th {
+    font-weight: bold;
+    width: 200px;
+  }
+  .own-page .eleven-pc .list table ul li {
+    list-style: none;
+  }
+  .own-page .twelev-pe {
+    display: none;
+  }
+  .own-page .twelev-pc {
+    display: block;
+    position: relative;
+    top: 2570px;
+  }
+  .own-page .twelev-pc .opacity {
+    position: absolute;
+    top: -150px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: rgba(255, 204, 204, 0.45);
+    font-size: 200px;
+  }
+  .own-page .twelev-pc .flex {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 900px;
+  }
+  .own-page .twelev-pc .flex img {
+    width: 330px;
+    height: 250px;
+  }
+  .own-page .twelev-pc .flex .tab {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .own-page .twelev-pc .flex .tab .title {
+    font-family: 'Noto Serif JP', serif;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  .own-page .twelev-pc .flex .tab .title > span {
+    color: #FF3399;
+    font-size: 50px;
+  }
+  .own-page .twelev-pc .flex .tab p {
+    text-align: center;
+    width: 650px;
+  }
+  .own-page .thirteen-pe {
+    display: none;
+  }
+  .own-page .thirteen-pc {
+    position: relative;
+    top: 2870px;
+    height: 500px;
+    display: block;
+  }
+  .own-page .thirteen-pc .contact {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 100px;
+    color: #FF3399;
+    z-index: 2;
+  }
+  .own-page .thirteen-pc .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 240px;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 1100px;
+    height: 400px;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #EEEEEE;
+    background-color: #EEEEEE;
+  }
+  .own-page .thirteen-pc .flex .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: relative;
+    top: 300px;
+    left: 50%;
+    -webkit-transform: translate(-75%, -50%);
+            transform: translate(-75%, -50%);
+    width: 500px;
+  }
+  .own-page .thirteen-pc .flex .list h4 {
+    font-family: 'Noto Serif JP', serif;
+    color: #FF3399;
+    font-size: 20px;
+  }
+  .own-page .thirteen-pc .flex .list h3 {
+    font-size: 35px;
+    position: relative;
+    top: 30px;
+  }
+  .own-page .thirteen-pc .flex .list #container {
+    position: relative;
+    bottom: 20px;
+  }
+  .own-page .thirteen-pc .flex .list #container .btn {
+    background-color: #FF3399;
+    color: white;
+    border: 0px solid white;
+    padding: 10px 40px;
+    margin: 50px 0;
+    font-weight: 600;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    height: 60px;
+    width: 300px;
+  }
+  .own-page .thirteen-pc .flex .list #container .btn:hover {
+    background-color: white;
+    color: black;
+  }
+  .own-page .thirteen-pc .flex .list .p {
+    position: relative;
+    top: 40px;
+    left: 30px;
+  }
+  .own-page .thirteen-pc .flex .list .last {
+    position: relative;
+    bottom: 50px;
+    left: 100px;
+  }
+  .own-page .fourteen-pe {
+    display: none;
+  }
+  .own-page .fourteen-pc {
+    position: relative;
+    top: 3000px;
+    background-color: black;
+    display: block;
+  }
+  .own-page .fourteen-pc .flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .own-page .fourteen-pc .flex img {
+    width: 200px;
+  }
+  .own-page .fourteen-pc .flex .tab {
+    color: white;
+  }
+  .own-page .fourteen-pc .flex .tab .last {
+    color: silver;
+  }
+  .two-page .header {
+    height: 95px;
+  }
+  .two-page .header img {
+    width: 170px;
+    padding: 10px;
+  }
+  .two-page .own-pe h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    width: 600px;
+  }
+  .two-page .two-pe {
+    height: 300px;
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /******************************************************************
+
+Stylesheet: Retinaディスプレイで適用
+
+******************************************************************/
+  /* 
+
+EXAMPLE 
+.icon {
+	background: url(images/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+*/
+}
+
+@media print {
+  /******************************************************************
+
+Stylesheet: プリンタのみに適用
+
+******************************************************************/
+}
+/*# sourceMappingURL=style.css.map */

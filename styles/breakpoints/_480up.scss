@@ -1,0 +1,991 @@
+$span:#FF3399;
+
+.own-page{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .header-pe{
+  height:60px;
+
+  .list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:375px;
+    & img{
+      width:  100px;
+      padding-left:5px;
+    }
+    & p{
+      width:180px;
+      font-size: 10px;
+      padding-top:13px;
+    }
+  }
+  }
+  .header-pc{
+  display: none;
+  }
+
+  .own-pe{
+  position: relative;
+  background-image:url("https://vbackground.com/haikei/wp-content/uploads/2020/04/white_wall_cealinglight.jpg");
+  height:450px;
+  background-size:cover;
+
+  & h1{
+    position: absolute;
+    top:70px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:340px;
+    font-size: 21px;
+    font-family: 'Noto Serif JP', serif;
+     & > span{
+      color:#FF3399;
+     }
+  }
+  & p{
+    position: absolute;
+    top:160px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:330px;
+    font-size: 10px;
+  }
+   }
+  .own-pc{
+  display: none;
+   }
+
+  .two-pe{
+  position: relative;
+  background-image: url("https://i.pinimg.com/originals/8e/89/1e/8e891e665a66ed96f1101ed579285d59.jpg");
+  height:850px;
+  
+  &::after{
+    content: '';
+    background-color:$span;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  .flex{
+    position: absolute;
+    top:370px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    
+    display: flex;
+    flex-direction: column;
+    color:white;
+    & p{
+     font-weight: bold;
+     text-align: center;
+    }
+    & h2{
+      font-family: 'Noto Serif JP', serif;
+      text-align: center;
+      border-bottom:3px solid yellow;
+      margin-bottom:20px;
+    }
+    & .batsu{
+      font-size: 70px;
+      text-align: center;
+      font-weight:lighter;
+      opacity: 0.6;
+      margin-bottom:20px;
+    }
+  }
+
+  & .text{
+    position: absolute;
+    top:750px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    width:340px;
+    font-size: 13px;
+    text-align: center;
+    color:white;
+  }
+  }
+  h2:nth-child(2){
+ width:250px;
+  }
+  .two-pc{
+  display: none;
+  }
+
+  .three-pe{
+  position: relative;
+
+   .flex{
+     display: flex;
+     flex-direction: column;
+
+     .list{
+       margin:80px 0;
+      & h1{
+       position: relative;
+       top:20px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       color:rgba(255,204,204,0.45);
+       font-size: 60px;     
+       width:230px; 
+      }
+      & img{
+       position: relative;
+       top:100px;
+       left:50%;
+       transform: translate(-38%,-50%);
+       width:300px;
+      }
+      .lang{
+       position: relative;
+       top:120px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       width:330px;
+       border-left:4px solid $span;
+       padding-left:20px;
+    
+        & .strong{
+         font-weight: bold;
+         color:$span;
+        }
+        & h2{
+         width:300px;
+         font-family: 'Noto Serif JP', serif;
+         & > span{
+          background:linear-gradient(transparent 60%, #ff6 60%);
+         }
+        }
+
+      }
+      & .work{
+       line-height:25px ;
+       width:300px;
+       position: relative;
+       top:400px;
+       left:50%;
+       transform: translate(-50%,-50%);
+       font-size: 11px;
+      }
+     }
+    }
+  }
+  .three-pc{
+  display: none;
+  }
+
+  .four-pe-pc{
+  position: relative;
+  top:150px;
+  background-image:url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+  height:500px;
+  background-size:cover;
+  &::after{
+    content: '';
+    background-color:$span;
+    opacity: 0.8;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  & h1{
+   z-index: 2;
+   position: absolute;
+   top:130px;
+   left:50%;
+   transform: translate(-50%,-50%);
+   width:250px;
+   font-family: 'Noto Serif JP', serif;
+   color:white;
+   font-size: 25px;
+   font-weight: lighter;
+  }
+  & p{
+    z-index: 2;
+    position: absolute;
+    top:250px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:370px;
+    text-align: center;
+    color:white;
+  }
+  #container {
+    position: relative;
+    top:300px;
+    text-align: center;
+    z-index: 2;
+     & .btn {
+      background-color: black;
+      color: white;
+      border: 0px solid white;
+      padding: 10px 40px;
+      margin: 50px 0;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s;
+      height:60px;
+      width:300px;
+   
+       &:hover {
+        background-color:white;
+        color: black;
+       }
+     }
+  }
+  }
+
+  .five-pe{
+    position: relative;
+    top:150px;
+    & .title{
+     position: absolute;
+     top:70px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     color:$span;
+     font-size: 40px;
+
+    }
+
+    .flex-ul{
+      position: absolute;
+      top:1270px;
+      left:50%;
+      transform: translate(-50%,-50%);
+
+      .flex-li{
+        display:flex ;
+        flex-direction: column;
+        
+        & .numbers{
+          text-align:left ;
+          color:#FF9999;
+          font-size: 60px;
+        }
+        & img{
+          width:400px;
+        }
+
+        .box{
+          padding: 0.5em 1em;
+          margin: 2em 0;
+          font-weight: bold;
+          border: solid 1px #000000;
+          width:350px;
+          height:40px;
+          text-align: center;
+          margin-left:10px;
+          
+          & p{
+            font-weight: lighter;
+          }
+        }
+
+        & h2{
+          font-family: 'Noto Serif JP', serif;
+          font-weight: lighter;
+          padding-bottom:10px;
+        }
+
+      }
+    }
+  }
+  .five-pc{
+    display: none;
+  }
+ 
+  .six-pe{
+    position: relative;
+    top:2630px;
+    height:870px;
+    background-color:#EEEEEE ;
+    & .our{
+     position: absolute;
+     top:-2px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     font-size: 40px;
+     color:$span;
+     font-weight: bold;
+    }
+  .list{
+    position: absolute;
+    top:450px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    .flex{
+      display: flex;
+      flex-direction: column;
+
+      .red{
+        border-left: 4px solid $span;
+        text-align: left;
+        margin-left:20px;
+        height:80px;
+        margin-top:10px;
+        margin-bottom:10px;
+
+        & .number{
+          color:#FF82B2;
+          padding-left:20px;
+        }
+        & h2{
+          font-size: 15px;
+          padding-left:20px;
+          width:300px;
+        }
+      }
+      & p{
+       width:320px;
+      margin-left:25px;
+      padding-top:20px;
+      font-size: 13px;
+      }
+    }
+  }
+}
+  .six-pc{
+    display: none;
+  }
+
+  .seven-pe-pc{
+    position: relative;
+    top:2630px;
+    background-image:url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height:500px;
+    background-size:cover;
+    &::after{
+      content: '';
+      background-color:$span;
+      opacity: 0.8;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  
+    & h1{
+     z-index: 2;
+     position: absolute;
+     top:130px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     width:250px;
+     font-family: 'Noto Serif JP', serif;
+     color:white;
+     font-size: 25px;
+     font-weight: lighter;
+    }
+    & p{
+      z-index: 2;
+      position: absolute;
+      top:250px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:370px;
+      text-align: center;
+      color:white;
+    }
+    #container {
+      position: relative;
+      top:300px;
+      text-align: center;
+      z-index: 2;
+       & .btn {
+        background-color: black;
+        color: white;
+        border: 0px solid white;
+        padding: 10px 40px;
+        margin: 50px 0;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        height:60px;
+        width:300px;
+     
+         &:hover {
+          background-color:white;
+          color: black;
+         }
+       }
+    }
+  }
+
+  .eight-pe{
+    position: relative;
+    top:2700px;
+
+    & h1{
+     position: absolute;
+     top:20px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     font-size: 35px;
+     color:$span;
+    }
+
+    .flex{
+      position: absolute;
+      top:730px;
+      left:50%;
+      transform: translate(-50%,-50%);
+
+
+      .list{
+        display: flex;
+        flex-direction: column;
+
+        & img{
+          width:400px;
+        }
+        .tab{
+          margin-top:20px;
+          border-left: 2px solid $span;
+          margin-left:1px;
+          padding-left:15px;
+          height:70px;
+
+          & .service{
+            font-weight: bold;
+            color:$span;
+            padding-top:5px;
+          }
+          & h3{
+           font-family: 'Noto Serif JP', serif;
+           position: relative;
+           bottom:10px;
+          }
+        }
+        & .system{
+          width: 290px;
+          font-size: 13px;
+          margin-left:20px;
+        }
+      }
+    }
+  }
+  .eight-pc{
+    display: none;
+  }
+
+  .nine-pe-pc{
+    position: relative;
+    top:4100px;
+    background-image:url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height:340px;
+    background-size:cover;
+    &::after{
+      content: '';
+      background-color:$span;
+      opacity: 0.8;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+  
+    & h1{
+     z-index: 2;
+     position: absolute;
+     top:100px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     color:white;
+     font-size: 35px;
+     font-weight:bold;
+    }
+  
+    & h3{
+      z-index: 2;
+      position: absolute;
+      top:170px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:345px;
+      color:white;
+      font-size: 15px;
+      font-family: 'Noto Serif JP', serif;
+    }
+   
+    #container {
+      position: relative;
+      top:160px;
+      text-align: center;
+      z-index: 2;
+       & .btn {
+        background-color: black;
+        color: white;
+        border: 0px solid white;
+        padding: 10px 40px;
+        margin: 50px 0;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s;
+        height:60px;
+        width:300px;
+     
+         &:hover {
+          background-color:white;
+          color: black;
+         }
+       }
+    }
+  }
+
+  .ten-pe{
+    position: relative;
+    top:4030px;
+    height:870px;
+    & .our{
+     position: absolute;
+     top:-2px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     font-size: 40px;
+     color:$span;
+     font-weight: bold;
+    }
+  .list{
+    position: absolute;
+    top:450px;
+    left:50%;
+    transform: translate(-50%,-50%);
+    .flex{
+      display: flex;
+      flex-direction: column;
+
+      .red{
+        border-left: 4px solid $span;
+        text-align: left;
+        margin-left:20px;
+        height:80px;
+        margin-top:10px;
+        margin-bottom:10px;
+
+        & .number{
+          color:#FF82B2;
+          padding-left:20px;
+        }
+        & h2{
+          font-size: 15px;
+          padding-left:20px;
+          width:300px;
+          font-family: 'Noto Serif JP', serif;
+        }
+      }
+      & p{
+       width:320px;
+      margin-left:25px;
+      padding-top:20px;
+      font-size: 13px;
+      }
+    }
+  }
+  }
+  .ten-pc{
+    display: none;
+  }
+
+  .eleven-pe{
+    position: relative;
+    top:4000px;
+    background-color:#EEEEEE ;
+    height:1400px;
+
+    & h1{
+     position: absolute;
+     top:50px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     font-size: 37px;
+     text-align: center;
+     color:$span;
+    }
+    & p{
+      position: absolute;
+      top:250px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:290px;
+      text-align: center;
+    }
+    & img{
+      position: absolute;
+      top:500px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:350px;
+    }
+   
+   table{
+     position: absolute;
+     top:1020px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     width:350px;
+
+     th,td{
+       border-top:1px solid #ccc;
+       border-bottom:1px solid #ccc;
+       padding:20px;
+     }
+     th{
+       font-weight: bold;
+      width:200px;
+     }
+
+     ul{
+       & li{
+         list-style: none;
+       }
+     }
+   }
+  }
+  .eleven-pc{
+    display:none;
+  }
+
+  .twelev-pe{
+    position: relative;
+    top:4200px;
+
+    & img{
+     position: absolute;
+     top:-50px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     width:260px;
+    }
+
+    & .opacity{
+      position: absolute;
+      top:60px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      color:rgba(255,204,204,0.45);
+      font-size: 70px;
+    }
+
+    & .title{
+      position: absolute;
+      top:130px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      width:200px;
+      font-family: 'Noto Serif JP', serif;
+    
+      & > span{
+        color:$span;
+      }
+    }
+
+    & p{
+     position: absolute;
+     top:280px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     width:350px;
+     text-align: center;
+     font-size: 13px;
+    }
+
+
+  }
+  .twelev-pc{
+    display:none;
+  }
+
+  .thirteen-pe{
+    display: block;
+    position: relative;
+    top:4600px;
+    background-color: #EEEEEE;
+    height:430px;
+
+    & .contact{
+     position: absolute;
+     top:1px;
+     font-size: 40px;
+     left:50%;
+     color:$span;
+     transform: translate(-50%,-50%);
+    }
+
+    .list{
+      position: absolute;
+      top:150px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+
+      & h4{
+        font-size: 20px;
+        width:300px;
+        color:$span;
+        font-family: 'Noto Serif JP', serif;
+      }
+      & h3{
+        font-size: 23px;
+        font-weight:bold;
+      }
+    }
+
+    .tab{
+      position: absolute;
+      top:350px;
+      left:50%;
+      transform: translate(-60%,-50%);
+      width:200px;
+      text-align: center;
+
+      display:flex;
+      flex-direction: column;
+
+      & h4{
+        font-size: 20px;
+        width:250px;
+        color:$span;
+        font-family: 'Noto Serif JP', serif;
+      }
+
+      #container {
+        position: relative;
+        bottom:30px;
+        right:30px;
+         & .btn {
+          background-color:$span;
+          color: white;
+          border: 0px solid white;
+          padding: 10px 40px;
+          margin: 50px 0;
+          font-weight: 600;
+          cursor: pointer;
+          transition: all 0.3s;
+          height:60px;
+          width:290px;
+       
+           &:hover {
+            background-color:white;
+            color: black;
+           }
+         }
+      }
+
+      & .p{
+        position: relative;
+        bottom:50px;
+        left:20px;
+      }
+
+
+    }
+  }
+  .thirteen-pc{
+    display: none;
+  }
+
+  .fourteen-pe{
+    position: relative;
+    top:4600px;
+    background-color: black;
+    height:350px;
+
+    & img{
+     position: absolute;
+     top:50px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     width:100px;
+    }
+
+    .flex{
+      color:white;
+      font-size: 10px;
+      text-align: center;
+      position: relative;
+      top:90px;
+
+      & .last{
+        color:silver;
+      }
+    }
+    
+  }
+  .fourteen-pc{
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+// position: absolute;
+// top:50%;
+// left:50%;
+// transform: translate(-50%,-50%);
+
+// font-family: 'Noto Serif JP', serif;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.two-page{
+  .header{
+    position: relative;
+    height:60px;
+
+    & img{
+      width:90px;
+      margin:10px;
+    }
+  }
+
+  .own-pe{
+    position: relative;
+    background-image:url("https://creive.me/wp-content/uploads/2016/08/girl-checking-tumblr-on-her-macbook-pro-picjumbo-com-761x508.jpg");
+    height:190px;
+    background-size:cover;
+    &::after{
+      content: '';
+      background-color:$span;
+      opacity: 0.8;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1;
+    }
+
+    & h1{
+     z-index: 2;
+     position: absolute;
+     top:90px;
+     left:50%;
+     transform: translate(-50%,-50%);
+     font-family: 'Noto Serif JP', serif;
+     color:white;
+     width:330px;
+     font-size:23px;
+    text-align:center;
+    }
+  }
+
+  .two-pe{ 
+    position: relative;
+   
+    .Form{
+      position: absolute;   
+      top:350px;
+      left:50%;
+      transform: translate(-50%,-50%);
+      .Form-Item {
+      padding-left: 14px;
+      padding-right: 14px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      flex-wrap: wrap;
+      }
+    }
+    
+  }
+  .Form-Item:nth-child(5) {
+    border-bottom: 1px solid #ddd;
+  }
+  .Form-Item-Label {
+    width: 100%;
+    max-width: 248px;
+    letter-spacing: 0.05em;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
